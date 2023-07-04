@@ -14,7 +14,7 @@ export default function IndexPage() {
   return (
     <main className="container grid items-center gap-6 pb-8 pt-8 md:py-14">
       <section className="flex max-w-[980px] flex-col items-start gap-2">
-        <div className="leading-tight tracking-tighter text-6xl sm:text-8xl md:text-9xl lg:text-[11rem]">
+        <div className="font-[300] leading-tight tracking-tighter text-6xl sm:text-8xl md:text-9xl lg:text-[11rem]">
           Hey, I'm
           <br /> <span className="font-extrabold">Sebastian!</span>
         </div>
@@ -25,11 +25,11 @@ export default function IndexPage() {
         </p>
       </section>
 
-      <section className="flex gap-4 mt-5 lg:mt-3 xl:mt-5">
+      <section className="flex gap-4 mt-5 lg:mt-3 xl:mt-5 ">
         <Link
           href={siteConfig.links.linkedin}
           target="_blank"
-          className={cn(buttonVariants(), "px-8", "lg:px-16")}
+          className={cn(buttonVariants(), "px-8", "lg:px-16", "shadow")}
         >
           LinkedIn
         </Link>
@@ -39,7 +39,8 @@ export default function IndexPage() {
           className={cn(
             buttonVariants({ variant: "outline" }),
             "px-8",
-            "lg:px-16"
+            "lg:px-16",
+            "shadow"
           )}
           onClick={() => {
             toast({
