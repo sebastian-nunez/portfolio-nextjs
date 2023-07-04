@@ -4,6 +4,7 @@ export const siteConfig = {
   name: "Sebastian Nunez",
   description:
     "Sebastian Nunez - Software Engineering Intern at JPMorgan Chase & Co. Google Tech Exchange Scholar. Computer Sciene student at Florida International University (Dec 2024)",
+  url: "https://www.sebastian-nunez.com/",
   profile: {
     currentRole: "Software Engineering Intern",
     currentCompany: "JPMorgan Chase & Co.",
