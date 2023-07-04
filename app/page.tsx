@@ -2,13 +2,14 @@ import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
+
+import { buttonVariants } from "@/ui/button"
 
 export default function IndexPage() {
   return (
     <section className="container grid items-center gap-6 pb-8 pt-6 md:py-14">
       <div className="flex max-w-[980px] flex-col items-start gap-2">
-        <h1 className="text-5xl font-extrabold leading-tight tracking-tighter md:text-8xl">
+        <h1 className="font-extrabold leading-tight tracking-tighter text-5xl sm:text-6xl md:text-8xl">
           Sebastian Nunez
         </h1>
 
