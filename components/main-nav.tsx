@@ -29,7 +29,7 @@ export function MainNav({ items, children }: MainNavProps) {
 
       {/* Mobile Nav */}
       <button
-        className="flex items-center space-x-2 md:hidden"
+        className="flex items-center space-x-2 -ml-7 md:hidden"
         onClick={() => setShowMobileMenu((current) => !current)}
       >
         {showMobileMenu ? <Icons.close /> : <Icons.menu />}

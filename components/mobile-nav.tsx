@@ -30,12 +30,11 @@ export function MobileNav({
         <nav className="grid gap-4 grid-flow-row auto-rows-max">
           {items.map((item, index) => (
             <Link
-              as="a"
               key={index}
               href={item.disabled ? "#" : item.href}
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
-                "text-center rounded-md text-xl font-bold w-full py-8 drop-shadow-sm",
+                "text-center rounded-md text-xl font-bold w-full py-6 drop-shadow-sm",
                 item.disabled && "cursor-not-allowed opacity-60"
               )}
               onClick={() => setShowMobileMenu(false)}
