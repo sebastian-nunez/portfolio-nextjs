@@ -10,7 +10,7 @@ const H1 = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <h1
     className={cn(
-      "scroll-m-20 text-4xl font-extrabold tracking-tight mb-10 text-foreground lg:text-5xl",
+      "scroll-m-20 text-4xl font-extrabold tracking-tight mb-5 text-foreground sm:mb-8 lg:text-5xl",
       className
     )}
     ref={ref}

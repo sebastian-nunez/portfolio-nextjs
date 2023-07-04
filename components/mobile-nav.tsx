@@ -34,7 +34,7 @@ export function MobileNav({
               href={item.disabled ? "#" : item.href}
               className={cn(
                 buttonVariants({ variant: "outline", size: "lg" }),
-                "text-center rounded-md text-xl font-bold w-full py-6 drop-shadow-sm",
+                "text-center rounded-md text-xl font-bold w-full py-6 drop-shadow-sm dark:bg-secondary",
                 item.disabled && "cursor-not-allowed opacity-60"
               )}
               onClick={() => setShowMobileMenu(false)}

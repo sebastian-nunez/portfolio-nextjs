@@ -2,7 +2,7 @@ import { Anchor, H1, P } from "@/components/ui/typography"
 
 const Projects: React.FC = () => {
   return (
-    <div className="py-6 container">
+    <div className="container mt-10">
       <H1>Projects</H1>
 
       <P>

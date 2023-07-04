@@ -2,7 +2,7 @@ import { Anchor, H1, P} from "@/components/ui/typography"
 
 const Experience: React.FC = () => {
   return (
-    <div className="py-6 container">
+    <div className="container mt-10">
       <H1>Experience</H1>
       <P>
         Once upon a time, in a far-off land, there was a very lazy king who

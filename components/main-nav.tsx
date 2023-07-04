@@ -44,9 +44,11 @@ export function MainNav({ items, children }: MainNavProps) {
         </MobileNav>
       )}
 
+
       {items?.length ? (
-        <nav className="hidden md:flex md:gap-6 ">
-          <Separator orientation="vertical" />
+        <nav className="hidden md:flex md:gap-6 dark:text-grey-200">
+          <Separator orientation="vertical" className="dark:bg-white"/>
+
           {items?.map(
             (item, index) =>
               item.href && (
@@ -54,10 +56,10 @@ export function MainNav({ items, children }: MainNavProps) {
                   key={index}
                   href={item.href}
                   className={cn(
-                    "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm",
+                    "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm dark:text-white",
                     item.href.startsWith(`/${path}`)
-                      ? "text-foreground"
-                      : "text-foreground/60",
+                      ? "text-foreground dark:text-white"
+                      : "text-foreground/60 dark:text-white/60",
                     item.disabled && "cursor-not-allowed opacity-80"
                   )}
                 >
