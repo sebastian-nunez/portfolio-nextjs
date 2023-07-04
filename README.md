@@ -1,22 +1,23 @@
-# next-template
+# Sebastian Nunez
 
-A Next.js 13 template for building apps with Radix UI and Tailwind CSS.
+Software Engineering Intern at JPMorgan Chase & Co.
 
 ## Usage
 
-```bash
-npx create-next-app -e https://github.com/shadcn/next-template
-```
+1. Install Dependencies: `npm install`
+2. Run Development Server: `npm run dev`
 
-## Features
+## Tech Stack
 
-- Next.js 13 App Directory
-- Radix UI Primitives
-- Tailwind CSS
-- Icons from [Lucide](https://lucide.dev)
-- Dark mode with `next-themes`
-- Tailwind CSS class sorting, merging and linting.
+- **Language:** TypeScript
+- **Framework:** Next.js 13
+- **UI Primitives:** Radix UI
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide
+- **Dark mode:** next-themes
+- **Unit Testing:** Jets
+- **E2E Testing:** Cypress
 
 ## License
 
-Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
+Licensed under the [MIT license](./LICENSE.md).
