@@ -1,9 +1,11 @@
 import {
   Github,
   Linkedin,
+  MenuIcon,
   Moon,
   Mountain,
   SunMedium,
+  XCircle,
   type Icon as LucideIcon,
 } from "lucide-react"
 
@@ -15,4 +17,6 @@ export const Icons = {
   linkedin: Linkedin,
   logo: Mountain,
   github: Github,
+  menu: MenuIcon,
+  close: XCircle,
 }
