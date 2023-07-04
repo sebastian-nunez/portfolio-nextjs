@@ -1,7 +1,7 @@
 import {
   Github,
   Linkedin,
-  MenuIcon,
+  Menu,
   Moon,
   Mountain,
   SunMedium,
@@ -17,6 +17,6 @@ export const Icons = {
   linkedin: Linkedin,
   logo: Mountain,
   github: Github,
-  menu: MenuIcon,
+  menu: Menu,
   close: XCircle,
 }
