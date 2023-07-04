@@ -3,6 +3,12 @@ import Link from "next/link"
 import { siteConfig } from "@/config/site"
 
 import { buttonVariants } from "@/components/ui/button"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
 import { Icons } from "@/components/icons"
 import { MainNav } from "@/components/main-nav"
 import { ThemeToggle } from "@/components/theme-toggle"
@@ -15,38 +21,69 @@ export function SiteHeader() {
 
         <div className="flex flex-1 items-center justify-end space-x-4">
           <nav className="flex items-center space-x-1">
-            <Link
-              href={siteConfig.links.linkedin}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div
-                className={buttonVariants({
-                  size: "sm",
-                  variant: "ghost",
-                })}
-              >
-                <Icons.linkedin className="h-5 w-5 fill-current" />
-                <span className="sr-only">LinkedIn</span>
-              </div>
-            </Link>
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger>
+                  <Link
+                    href={siteConfig.links.linkedin}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div
+                      className={buttonVariants({
+                        size: "sm",
+                        variant: "ghost",
+                      })}
+                    >
+                      <Icons.linkedin className="h-5 w-5 fill-current" />
+                      <span className="sr-only">LinkedIn</span>
+                    </div>
+                  </Link>
+                </TooltipTrigger>
 
-            <Link
-              href={siteConfig.links.github}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div
-                className={buttonVariants({
-                  size: "sm",
-                  variant: "ghost",
-                })}
-              >
-                <Icons.github className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
-              </div>
-            </Link>
-            <ThemeToggle />
+                <TooltipContent>
+                  <p>LinkedIn</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger>
+                  <Link
+                    href={siteConfig.links.github}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <div
+                      className={buttonVariants({
+                        size: "sm",
+                        variant: "ghost",
+                      })}
+                    >
+                      <Icons.github className="h-5 w-5" />
+                      <span className="sr-only">GitHub</span>
+                    </div>
+                  </Link>
+                </TooltipTrigger>
+
+                <TooltipContent>
+                  <p>GitHub</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger>
+                  <ThemeToggle />
+                </TooltipTrigger>
+
+                <TooltipContent>
+                  <p>Light/Dark</p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
           </nav>
         </div>
       </div>

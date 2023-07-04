@@ -11,6 +11,8 @@ import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
 import { MobileNav } from "@/components/mobile-nav"
 
+import { Separator } from "./ui/separator"
+
 interface MainNavProps {
   items?: NavItem[]
   children?: React.ReactNode
@@ -44,6 +46,7 @@ export function MainNav({ items, children }: MainNavProps) {
 
       {items?.length ? (
         <nav className="hidden md:flex md:gap-6 ">
+          <Separator orientation="vertical" />
           {items?.map(
             (item, index) =>
               item.href && (
