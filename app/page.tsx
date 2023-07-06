@@ -2,14 +2,25 @@
 
 import Link from "next/link"
 
-import { EXPERIENCE_RESULTS_LIMIT, experience, siteConfig } from "@/config/site"
+import {
+  EXPERIENCE_RESULTS_LIMIT,
+  EXPERIENCE_SKILLS_SEPARATOR,
+  experience,
+  profile,
+  projects,
+} from "@/config/profile"
+import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 
 import { ToastAction } from "@/components/ui/toast"
-import { H2 } from "@/components/ui/typography"
+import { H1, H2, P } from "@/components/ui/typography"
 import { useToast } from "@/components/ui/use-toast"
-import { buttonVariants } from "@/ui/button"
+import { Button, buttonVariants } from "@/ui/button"
 import ExperienceCard from "@/components/experience-card"
+import ProjectCard from "@/components/project-card"
+import ProjectSidepanel from "@/components/project-sidepanel"
+
+import { PROJECT_RESULTS_LIMIT } from "../config/profile"
 
 export default function IndexPage() {
   const { toast } = useToast()
@@ -23,8 +34,7 @@ export default function IndexPage() {
         </div>
 
         <p className="italic max-w-[700px] leading-tight text-muted-foreground text-base sm:text-md md:text-xl lg:text-2xl">
-          {siteConfig.profile.currentRole} at{" "}
-          {siteConfig.profile.currentCompany}
+          {profile.currentRole} at {profile.currentCompany}
         </p>
       </section>
 
@@ -58,15 +68,54 @@ export default function IndexPage() {
       </section>
 
       <section className="mt-[13rem]">
-        <H2 className="mb-5 md:text-3xl">Experience</H2>
+        <H2 className="mb-5 md:text-3xl lg:text-5xl">Experience</H2>
 
-        <div className="grid gap-7 grid-cols-1 md:grid-cols-2 lg:md:grid-cols-3 lg:gap-4">
-          {experience &&
-            experience
-              .slice(0, EXPERIENCE_RESULTS_LIMIT)
-              .map((job) => <ExperienceCard {...job} />)}
+        <div className="grid gap-7 grid-cols-1 md:grid-cols-2  lg:gap-4 xl:grid-cols-3">
+          {experience
+            ? experience
+                .slice(0, EXPERIENCE_RESULTS_LIMIT)
+                .map((experiencePoint) => (
+                  <ExperienceCard
+                    key={experiencePoint.daterange}
+                    {...experiencePoint}
+                    skillSeparator={EXPERIENCE_SKILLS_SEPARATOR}
+                  />
+                ))
+            : null}{" "}
+          {/* TODO: implement a simple loading spinner */}
         </div>
       </section>
+
+      <section className="mt-6">
+        <H2 className="mb-5 md:text-3xl lg:text-5xl">Projects</H2>
+
+        <div className="grid gap-7 grid-cols-1 md:grid-cols-2  lg:gap-4">
+          {projects ? (
+            projects
+              .slice(0, PROJECT_RESULTS_LIMIT)
+              .map((project) => (
+                <ProjectCard key={project.title} {...project} />
+              ))
+          ) : (
+            <div>
+              <H1 className="mt-5">I'm sorry :/ </H1>
+
+              <P>
+                It seems like there are more projects to show off at the moment
+              </P>
+            </div>
+          )}
+          {/* TODO: implement a simple loading spinner */}
+        </div>
+      </section>
+
+      {/* <ProjectSidepanel /> */}
+
+      <div className="flex justify-center">
+        <Button size="lg" className="w-1/2 mt-10 drop-shadow-lg">
+          <Link href="/resume">View Resume</Link>
+        </Button>
+      </div>
     </main>
   )
 }
