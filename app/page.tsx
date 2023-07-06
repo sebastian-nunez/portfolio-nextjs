@@ -27,47 +27,50 @@ export default function IndexPage() {
 
   return (
     <main className="container grid items-center gap-6 pb-8 pt-8 md:py-14">
-      <section className="flex max-w-[980px] flex-col items-start gap-2">
-        <div className="font-[300] leading-tight text-6xl sm:text-8xl md:text-9xl lg:text-[11rem]">
-          Hey, I'm
-          <br /> <span className="font-extrabold">Sebastian!</span>
-        </div>
+      <div className="h-[calc(100vh_-_8rem)]">
+        {" "}
+        {/* Push everything below the hero down */}
+        <section className="flex max-w-[980px] flex-col items-start gap-2">
+          <div className="font-[300] leading-tight text-6xl sm:text-8xl md:text-9xl lg:text-[11rem]">
+            Hey, I'm
+            <br /> <span className="font-extrabold">Sebastian!</span>
+          </div>
 
-        <p className="italic max-w-[700px] leading-tight text-muted-foreground text-base sm:text-md md:text-xl lg:text-2xl">
-          {profile.currentRole} at {profile.currentCompany}
-        </p>
-      </section>
+          <p className="italic max-w-fit sm:max-w-[700px] leading-tight text-muted-foreground text-base sm:text-md md:text-xl lg:text-2xl">
+            {profile.currentRole} at {profile.currentCompany}
+          </p>
+        </section>
+        <section className="flex gap-4 mt-5 lg:mt-3 xl:mt-5 ">
+          <Link
+            href={siteConfig.links.linkedin}
+            target="_blank"
+            className={cn(buttonVariants(), "px-8", "lg:px-16", "shadow")}
+          >
+            LinkedIn
+          </Link>
 
-      <section className="flex gap-4 mt-5 lg:mt-3 xl:mt-5 ">
-        <Link
-          href={siteConfig.links.linkedin}
-          target="_blank"
-          className={cn(buttonVariants(), "px-8", "lg:px-16", "shadow")}
-        >
-          LinkedIn
-        </Link>
+          <Link
+            href={"/resume"}
+            className={cn(
+              buttonVariants({ variant: "outline" }),
+              "px-8",
+              "lg:px-16",
+              "shadow"
+            )}
+            onClick={() => {
+              toast({
+                title: "Awesome!",
+                description: "Let's have a look, shall we?",
+                action: <ToastAction altText="Dismiss">Dismiss</ToastAction>,
+              })
+            }}
+          >
+            Resume
+          </Link>
+        </section>
+      </div>
 
-        <Link
-          href={"/resume"}
-          className={cn(
-            buttonVariants({ variant: "outline" }),
-            "px-8",
-            "lg:px-16",
-            "shadow"
-          )}
-          onClick={() => {
-            toast({
-              title: "Awesome!",
-              description: "Let's have a look, shall we?",
-              action: <ToastAction altText="Dismiss">Dismiss</ToastAction>,
-            })
-          }}
-        >
-          Resume
-        </Link>
-      </section>
-
-      <section className="mt-[13rem]">
+      <section className="">
         <H2 className="mb-5 md:text-3xl lg:text-5xl">Experience</H2>
 
         <div className="grid gap-7 grid-cols-1 md:grid-cols-2  lg:gap-4 xl:grid-cols-3">
