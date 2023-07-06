@@ -54,7 +54,7 @@ export const experience: ExperiencePoint[] = [
   {
     company: "INIT",
     role: "Web Developer",
-    daterange: "Oct 2022 - Nov 2022",
+    daterange: "Aug 2022 - Oct 2022",
     summary: [
       "Led the development of a fullstack Web Application to help students for technical roles",
       "Successfully embedded an efficient text editor, improving player retention by over 50%",
