@@ -1,3 +1,13 @@
+import { useEffect, useState } from "react"
+
+import { ExperiencePoint } from "@/types/experience"
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 import {
   Card,
   CardContent,
@@ -9,30 +19,27 @@ import {
 import { Separator } from "@/components/ui/separator"
 import { P } from "@/components/ui/typography"
 
-import "@/config/site"
-
-export interface ExperienceCardProps {
-  company: string
-  role: string
-  daterange: string
-  summary: string[]
-  technologies: string
-  details?: string[]
+interface ExperienceCardProps extends ExperiencePoint {
+  skillSeparator: string
 }
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({
   company,
   role,
   daterange,
-  technologies,
+  skills,
   summary,
+  skillSeparator = "•",
+  details,
 }) => {
   return (
-    <Card className="shadow-lg">
-      <CardHeader>
-        <CardTitle className="text-lg md:text-3xl">{company}</CardTitle>
+    <Card className="shadow-lg  text-ellipsis">
+      <CardHeader className="text-center">
+        <CardTitle className="text-2xl md:text-3xl xl:text-4xl">
+          {company}
+        </CardTitle>
 
-        <CardDescription className="md:text-sm">
+        <CardDescription className="text-md md:text-lg">
           {role}
           <br />
           <em>{daterange}</em>
@@ -42,16 +49,25 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
       <Separator />
 
       <CardContent className="pb-0">
-        <ol className="my-6 ml-6 list-disc [&>li]:mt-2">
-          {summary.map((point) => (
-            <li>{point}</li>
-          ))}
-        </ol>
+        <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+          {summary && summary.map((point) => <li key={point}>{point}</li>)}
+        </ul>
       </CardContent>
 
-      <CardFooter className="-mt-6">
-        <P>
-          <strong>Technologies:</strong> {technologies}
+      <CardFooter className="-mt-7 text-sm xl:text-md font-medium">
+        <P className="mr-2 text-center">
+          {skills &&
+            skills.slice(0, skills.length - 1).map(
+              (
+                skill // don't include the separator on the 2nd to last item
+              ) => (
+                <em>
+                  {skill} {skillSeparator}{" "}
+                </em>
+              )
+            )}
+
+          <em>{skills[skills.length - 1]}</em>
         </P>
       </CardFooter>
     </Card>
