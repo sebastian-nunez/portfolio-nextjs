@@ -218,6 +218,6 @@ export const projects: ProjectPoint[] = [
       "Created comprehensive Unit Tests to ensure the quality and reliability of the software product",
       "Created the documentation to aid the operation of the various services offered by the API",
     ],
-    link: "https://colab.research.google.com/drive/186ybPlaHhcHlNhuoaEl86AnLJO0omNdM",
+    link: "",
   },
 ]
