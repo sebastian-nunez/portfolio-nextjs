@@ -28,7 +28,7 @@ const Projects: React.FC = () => {
       </div>
 
       <div className="flex justify-center">
-        <Button size="lg" className="w-1/2 mt-10 drop-shadow-lg">
+        <Button size="lg" className="w-1/2 mt-10 drop-shadow-lg" asChild>
           <Link href="/resume">View Resume</Link>
         </Button>
       </div>
