@@ -175,7 +175,6 @@ const Anchor = React.forwardRef<
       "font-medium text-primary underline underline-offset-4",
       className
     )}
-    href="."
     ref={ref}
     {...props}
   />

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Link from "next/link"
 
 import { ExperiencePoint, ProjectPoint } from "@/types/experience"
 
@@ -61,7 +62,15 @@ const ProjectCard: React.FC<ExperienceCardProps> = ({
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
-                <Anchor href={link}>Code Repository</Anchor>
+                <Link
+                  href={link}
+                  target="_blank"
+                  className={
+                    "font-medium text-primary underline underline-offset-4"
+                  }
+                >
+                  Code Repository
+                </Link>
               </TooltipTrigger>
 
               <TooltipContent>

@@ -144,7 +144,7 @@ export const projects: ProjectPoint[] = [
       "Increased user engagement by 75% through interactive widgets, charts, and tables",
       "Enhanced the user experience for new users by integrating tooltips and user-input validation",
     ],
-    link: "github.com/sebastian-nunez/mlb-insights",
+    link: "https://github.com/sebastian-nunez/mlb-insights",
   },
   {
     title: "T3 Web App",
@@ -169,7 +169,7 @@ export const projects: ProjectPoint[] = [
       "Conducted research and experimentation to identify the most effective Deep Learning model",
       "Designed an interface that enables users to snap a picture of their face, which is subsequently analyzed by the AI model",
     ],
-    link: "colab.research.google.com/drive/13zpVZk-emQnJqjK4I8bEAehDeG_rwIO8",
+    link: "https://colab.research.google.com/drive/13zpVZk-emQnJqjK4I8bEAehDeG_rwIO8",
   },
 
   {
@@ -182,7 +182,7 @@ export const projects: ProjectPoint[] = [
       "Performed weekly Code Reviews and Team Standups to maximize productivity and synchronization",
       "Implemented the Model-View-Controller (MVC) architecture to enhance the flexibility and maintainability of the codebase",
     ],
-    link: "github.com/Sejalnh/GeekText-Group16",
+    link: "https://github.com/Sejalnh/GeekText-Group16",
   },
   {
     title: "Attendance Forecaster",
@@ -194,7 +194,7 @@ export const projects: ProjectPoint[] = [
       "Analyzed historical attendance data and external factors to build a predictive model",
       "Utilized various Machine Learning tools and technologies to create a scalable and reliable prediction model",
     ],
-    link: "colab.research.google.com/drive/1v4qe8LVDYIy9pjGCiQy0Ld05n63N29Vl",
+    link: "https://colab.research.google.com/drive/1v4qe8LVDYIy9pjGCiQy0Ld05n63N29Vl",
   },
   {
     title: "Spotify Song Analyzer",
@@ -206,7 +206,7 @@ export const projects: ProjectPoint[] = [
       "Conducted thorough research and testing to select the most suitable model for our data ",
       "Fine-tuned hyperparameters to achieve optimal model performance with minimal training time",
     ],
-    link: "colab.research.google.com/drive/186ybPlaHhcHlNhuoaEl86AnLJO0omNdM",
+    link: "https://colab.research.google.com/drive/186ybPlaHhcHlNhuoaEl86AnLJO0omNdM",
   },
   {
     title: "Streaming Platform API",
@@ -218,6 +218,6 @@ export const projects: ProjectPoint[] = [
       "Created comprehensive Unit Tests to ensure the quality and reliability of the software product",
       "Created the documentation to aid the operation of the various services offered by the API",
     ],
-    link: "colab.research.google.com/drive/186ybPlaHhcHlNhuoaEl86AnLJO0omNdM",
+    link: "https://colab.research.google.com/drive/186ybPlaHhcHlNhuoaEl86AnLJO0omNdM",
   },
 ]
