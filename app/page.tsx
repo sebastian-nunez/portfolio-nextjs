@@ -59,8 +59,8 @@ export default function IndexPage() {
             )}
             onClick={() => {
               toast({
-                title: "Awesome!",
-                description: "Let's have a look, shall we?",
+                title: "Awesome! Let's have a look, shall we?",
+                description: "Generating a Google Doc to PDF preview...",
                 action: <ToastAction altText="Dismiss">Dismiss</ToastAction>,
               })
             }}
