@@ -33,7 +33,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   details,
 }) => {
   return (
-    <Card className="shadow-lg  text-ellipsis">
+    <Card className="text-ellipsis  shadow-lg">
       <CardHeader className="text-center">
         <CardTitle className="text-2xl md:text-3xl xl:text-4xl">
           {company}
@@ -54,7 +54,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
         </ul>
       </CardContent>
 
-      <CardFooter className="-mt-7 text-sm xl:text-md font-medium">
+      <CardFooter className="xl:text-md -mt-7 text-sm font-medium">
         <P className="mr-2 text-center">
           {skills &&
             skills.slice(0, skills.length - 1).map(

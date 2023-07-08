@@ -3,7 +3,7 @@ import BioSkeleton from "@/components/bio-skeleton"
 
 export default function BiographyLoading() {
   return (
-    <div className="container grid grid-1 gap-4 mt-10">
+    <div className="grid-1 container mt-10 grid gap-4">
       <BioSkeleton />
     </div>
   )

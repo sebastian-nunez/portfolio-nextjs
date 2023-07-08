@@ -25,13 +25,13 @@ export function MainNav({ items, children }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
       <Link href="/" className="flex items-center space-x-2">
-        <Icons.logo className="mb-2 h-6 w-6 fill-inherit hidden md:inline" />
-        <span className="font-bold hidden lg:inline">{siteConfig.name}</span>
+        <Icons.logo className="mb-2 hidden h-6 w-6 fill-inherit md:inline" />
+        <span className="hidden font-bold lg:inline">{siteConfig.name}</span>
       </Link>
 
       {/* Mobile Nav */}
       <button
-        className="flex items-center space-x-2 -ml-7 md:hidden"
+        className="-ml-7 flex items-center space-x-2 md:hidden"
         onClick={() => setShowMobileMenu((current) => !current)}
       >
         {showMobileMenu ? <Icons.close /> : <Icons.menu />}
@@ -44,10 +44,9 @@ export function MainNav({ items, children }: MainNavProps) {
         </MobileNav>
       )}
 
-
       {items?.length ? (
-        <nav className="hidden md:flex md:gap-6 dark:text-grey-200">
-          <Separator orientation="vertical" className="dark:bg-white"/>
+        <nav className="dark:text-grey-200 hidden md:flex md:gap-6">
+          <Separator orientation="vertical" className="dark:bg-white" />
 
           {items?.map(
             (item, index) =>
@@ -56,7 +55,7 @@ export function MainNav({ items, children }: MainNavProps) {
                   key={index}
                   href={item.href}
                   className={cn(
-                    "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 sm:text-sm dark:text-white",
+                    "flex items-center text-lg font-medium transition-colors hover:text-foreground/80 dark:text-white sm:text-sm",
                     item.href.startsWith(`/${path}`)
                       ? "text-foreground dark:text-white"
                       : "text-foreground/60 dark:text-white/60",

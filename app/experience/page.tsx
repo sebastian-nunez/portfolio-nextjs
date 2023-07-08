@@ -1,4 +1,4 @@
-import { Anchor, H1, P} from "@/components/ui/typography"
+import { Anchor, H1, P } from "@/components/ui/typography"
 
 const Experience: React.FC = () => {
   return (

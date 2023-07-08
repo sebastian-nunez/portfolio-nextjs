@@ -31,16 +31,16 @@ export default function IndexPage() {
         {" "}
         {/* Push everything below the hero down */}
         <section className="flex max-w-[980px] flex-col items-start gap-2">
-          <div className="font-[300] leading-tight text-6xl sm:text-8xl md:text-9xl lg:text-[11rem]">
+          <div className="text-6xl font-[300] leading-tight sm:text-8xl md:text-9xl lg:text-[11rem]">
             Hey, I'm
             <br /> <span className="font-extrabold">Sebastian!</span>
           </div>
 
-          <p className="italic max-w-fit sm:max-w-[700px] leading-tight text-muted-foreground text-base sm:text-md md:text-xl lg:text-2xl">
+          <p className="sm:text-md max-w-fit text-base italic leading-tight text-muted-foreground sm:max-w-[700px] md:text-xl lg:text-2xl">
             {profile.currentRole} at {profile.currentCompany}
           </p>
         </section>
-        <section className="flex gap-4 mt-5 lg:mt-3 xl:mt-5 ">
+        <section className="mt-5 flex gap-4 lg:mt-3 xl:mt-5 ">
           <Link
             href={siteConfig.links.linkedin}
             target="_blank"
@@ -73,7 +73,7 @@ export default function IndexPage() {
       <section className="">
         <H2 className="mb-5 md:text-3xl lg:text-5xl">Experience</H2>
 
-        <div className="grid gap-7 grid-cols-1 md:grid-cols-2  lg:gap-4 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-7 md:grid-cols-2  lg:gap-4 xl:grid-cols-3">
           {experience
             ? experience
                 .slice(0, EXPERIENCE_RESULTS_LIMIT)
@@ -92,7 +92,7 @@ export default function IndexPage() {
       <section className="mt-6">
         <H2 className="mb-5 md:text-3xl lg:text-5xl">Projects</H2>
 
-        <div className="grid gap-7 grid-cols-1 md:grid-cols-2  lg:gap-4">
+        <div className="grid grid-cols-1 gap-7 md:grid-cols-2  lg:gap-4">
           {projects ? (
             projects
               .slice(0, PROJECT_RESULTS_LIMIT)
@@ -117,7 +117,7 @@ export default function IndexPage() {
       <div className="flex justify-center">
         <Button
           size="lg"
-          className="w-1/2 mt-10 drop-shadow-lg"
+          className="mt-10 w-1/2 drop-shadow-lg"
           asChild
           onClick={() => {
             toast({

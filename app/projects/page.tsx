@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
     <section className="container my-10">
       <H1 className="mb-5 md:text-3xl lg:text-5xl">Projects</H1>
 
-      <div className="grid gap-7 grid-cols-1 md:grid-cols-2  lg:gap-4">
+      <div className="grid grid-cols-1 gap-7 md:grid-cols-2  lg:gap-4">
         {projects && projects.length > PROJECT_RESULTS_LIMIT ? (
           projects.map((project) => (
             <ProjectCard key={project.title} {...project} />
@@ -35,7 +35,7 @@ const Projects: React.FC = () => {
       <div className="flex justify-center">
         <Button
           size="lg"
-          className="w-1/2 mt-10 drop-shadow-lg"
+          className="mt-10 w-1/2 drop-shadow-lg"
           asChild
           onClick={() => {
             toast({

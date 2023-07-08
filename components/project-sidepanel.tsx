@@ -19,13 +19,13 @@ const ProjectSidepanel: React.FC = () => {
       <Sheet>
         <SheetTrigger>
           <div className="flex justify-center">
-            <Button size="lg" className="w-1/2 mt-10 drop-shadow-lg">
+            <Button size="lg" className="mt-10 w-1/2 drop-shadow-lg">
               <span>More Projects?</span>
             </Button>
           </div>
         </SheetTrigger>
 
-        <SheetContent side="left" className="w-full h-[100rem]">
+        <SheetContent side="left" className="h-[100rem] w-full">
           <SheetHeader>
             <SheetTitle className="text-lg">More Projects!</SheetTitle>
           </SheetHeader>

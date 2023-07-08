@@ -10,7 +10,7 @@ const H1 = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <h1
     className={cn(
-      "scroll-m-20 text-4xl font-extrabold tracking-tight mb-5 text-foreground sm:mb-8 lg:text-5xl",
+      "mb-5 scroll-m-20 text-4xl font-extrabold tracking-tight text-foreground sm:mb-8 lg:text-5xl",
       className
     )}
     ref={ref}
@@ -69,7 +69,7 @@ const P = React.forwardRef<
   React.ComponentPropsWithoutRef<"p">
 >(({ className, ...props }, ref) => (
   <p
-    className={cn("leading-7 mt-4 [&:not(:first-child)]:mb-6", className)}
+    className={cn("mt-4 leading-7 [&:not(:first-child)]:mb-6", className)}
     ref={ref}
     {...props}
   />
