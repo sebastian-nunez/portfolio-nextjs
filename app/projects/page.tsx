@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 
 import { PROJECT_RESULTS_LIMIT, projects } from "@/config/profile"
