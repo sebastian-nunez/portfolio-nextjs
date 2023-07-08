@@ -40,7 +40,7 @@ export default function IndexPage() {
             {profile.currentRole} at {profile.currentCompany}
           </p>
         </section>
-        <section className="mt-5 flex gap-4 lg:mt-3 xl:mt-5 ">
+        <section className="mt-7 flex gap-4 lg:mt-8 xl:mt-10">
           <Link
             href={siteConfig.links.linkedin}
             target="_blank"
