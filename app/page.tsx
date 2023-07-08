@@ -60,7 +60,7 @@ export default function IndexPage() {
             onClick={() => {
               toast({
                 title: "Awesome! Let's have a look, shall we?",
-                description: "Generating a Google Doc to PDF preview...",
+                description: "Generating a PDF preview...",
                 action: <ToastAction altText="Dismiss">Dismiss</ToastAction>,
               })
             }}
@@ -115,7 +115,18 @@ export default function IndexPage() {
       {/* <ProjectSidepanel /> */}
 
       <div className="flex justify-center">
-        <Button size="lg" className="w-1/2 mt-10 drop-shadow-lg" asChild>
+        <Button
+          size="lg"
+          className="w-1/2 mt-10 drop-shadow-lg"
+          asChild
+          onClick={() => {
+            toast({
+              title: "Awesome! Let's have a look, shall we?",
+              description: "Generating a PDF preview...",
+              action: <ToastAction altText="Dismiss">Dismiss</ToastAction>,
+            })
+          }}
+        >
           <Link href="/resume">View Resume</Link>
         </Button>
       </div>
