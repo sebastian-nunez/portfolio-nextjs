@@ -1,11 +1,19 @@
-# Sebastian Nunez
+# Sebastian Nunez - Portfolio
 
-Software Engineering Intern at JPMorgan Chase & Co.
+> Personal portfolio built with from the ground up using industry-leading technology and practices.
+
+[sebastian-nunez.com](https://www.sebastian-nunez.com/)
 
 ## Usage
 
 1. Install Dependencies: `npm install`
 2. Run Development Server: `npm run dev`
+
+## Video Walkthrough
+
+<img src="demo.gif" alt="video demo" />
+
+> _Last Updated: 07/10/23_
 
 ## Tech Stack
 
@@ -15,8 +23,7 @@ Software Engineering Intern at JPMorgan Chase & Co.
 - **Styling:** Tailwind CSS
 - **Icons:** Lucide
 - **Dark mode:** next-themes
-- **Unit Testing:** Jets
-- **E2E Testing:** Cypress
+- **Unit Testing:** Jest
 
 ## License
 
