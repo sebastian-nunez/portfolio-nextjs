@@ -17,9 +17,9 @@ export const experience: ExperiencePoint[] = [
     role: "Software Engineer Intern",
     daterange: "Jun 2023 - Aug 2023",
     summary: [
-      "Fullstack Software Engineering Intern under the Data Technology team (Data Pipelines)",
-      "Efficiently extracting, processing, and delivering Big Data across the firm",
-      "Collaborating with various teams to develop, ship and test resilient software",
+      "Developing a microservice to parse, store, and filter thousands of events from data streams",
+      "Enforcing robust Unit and Integration Testing with an outstanding 90% code coverage",
+      "Deploying a frontend interface to allow simplified access to the events in the database",
     ],
     skills: [
       "Java",
@@ -27,9 +27,10 @@ export const experience: ExperiencePoint[] = [
       "SpringBoot",
       "Kafka",
       "AWS",
-      "Kubernetes",
+      "Jira",
       "Microservices",
       "Kanban",
+      "CI/CD",
     ],
     details: [
       "Utilizing Agile methodologies to enhance adaptability and flexibility",
@@ -77,7 +78,7 @@ export const experience: ExperiencePoint[] = [
     role: "Discover AI Fellow",
     daterange: "Jan 2023 - Apr 2023",
     summary: [
-      "Collaborated on a Machine Learning project to infer song genres through data analysis",
+      "Developed a Machine Learning model to infer song genres through parameter analysis",
       "Learned about AI applications/fundamental concepts (supervised learning, neural networks)",
       "Researched the ethical implications of data processing and AI implementation on our society",
     ],
