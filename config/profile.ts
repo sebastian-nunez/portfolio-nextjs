@@ -18,8 +18,8 @@ export const experience: ExperiencePoint[] = [
     daterange: "Jun 2023 - Aug 2023",
     summary: [
       "Developing a microservice to parse, store, and filter thousands of events from data streams",
-      "Enforcing robust Unit and Integration Testing with an outstanding 90% code coverage",
       "Deploying a frontend interface to allow simplified access to the events in the database",
+      "Configuring cost-efficient, auto-scaling to handle up to 50,000 events per day",
     ],
     skills: [
       "Java",
