@@ -20,6 +20,7 @@ export const experience: ExperiencePoint[] = [
       "Developing a microservice to parse, store, and filter thousands of events from data streams",
       "Deploying a frontend interface to allow simplified access to the events in the database",
       "Configuring cost-efficient, auto-scaling to handle up to 50,000 events per day",
+      "Implementing robust Unit and Integration Tests with an outstanding 98% code coverage",
     ],
     skills: [
       "Java",
@@ -43,7 +44,8 @@ export const experience: ExperiencePoint[] = [
     summary: [
       "Completed accredited coursework and mentorship directly from Google engineers",
       "Developed expertise in the efficient usage of Data Structures & Algorithms",
-      "Expanded my network through adequate collaboration and mentorship",
+      "Gained unique insights into Google's engineering practices and culture",
+      "Collaborated with a diverse and talented network of peers across the United States",
     ],
     skills: [
       "Applied Data Structures & Algorithms",
@@ -59,7 +61,8 @@ export const experience: ExperiencePoint[] = [
     summary: [
       "Led the development of a fullstack Web Application to help students for technical roles",
       "Successfully embedded an efficient text editor, improving player retention by over 50%",
-      "Worked on the integration of a secure backend server to handle thousands of requests",
+      "Engineered the integration of a secure backend server to handle thousands of requests",
+      "Implemented indexing, query optimizations, and proxy caching decreasing server latency by 30%",
     ],
     skills: [
       "TypeScript",
@@ -162,11 +165,11 @@ export const projects: ProjectPoint[] = [
   {
     title: "T3 Web App",
     summary:
-      "Steered the design and development of a responsive Web Application for a nonprofit partner",
+      "Steered the design and development of a responsive Web Application for a non-profit partner",
     technologies:
       "JavaScript, React.js, UI/UX, Figma, Bootstrap, Kanban, GitHub",
     details: [
-      "Created modular, reusable UI components that increased development efficiency by over 40%",
+      "Created modular, reusable UI components leading to a 40% increase in development efficiency",
       "Mocked server data in order to provide the infrastructure needed to populate web pages dynamically",
       "Developed a seamless, unified, and responsive User Experience across mobile and desktop devices",
     ],
