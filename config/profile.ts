@@ -170,7 +170,7 @@ export const projects: ProjectPoint[] = [
       "JavaScript, React.js, UI/UX, Figma, Bootstrap, Kanban, GitHub",
     details: [
       "Created modular, reusable UI components leading to a 40% increase in development efficiency",
-      "Mocked server data in order to provide the infrastructure needed to populate web pages dynamically",
+      "Mocked server data in order to deliver the infrastructure needed to populate web pages dynamically",
       "Developed a seamless, unified, and responsive User Experience across mobile and desktop devices",
     ],
     link: "",
