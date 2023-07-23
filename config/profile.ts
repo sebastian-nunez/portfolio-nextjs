@@ -14,7 +14,7 @@ export const profile = {
 export const experience: ExperiencePoint[] = [
   {
     company: "JPMorgan Chase & Co.",
-    role: "Software Engineer Intern",
+    role: "Software Engineer (Intern)",
     daterange: "Jun 2023 - Aug 2023",
     summary: [
       "Developing a microservice to parse, store, and filter thousands of events from data streams",
@@ -54,7 +54,7 @@ export const experience: ExperiencePoint[] = [
   },
   {
     company: "INIT",
-    role: "Web Developer",
+    role: "Web Developer (Apprentice)",
     daterange: "Aug 2022 - Oct 2022",
     summary: [
       "Led the development of a fullstack Web Application to help students for technical roles",
@@ -93,7 +93,7 @@ export const experience: ExperiencePoint[] = [
   },
   {
     company: "JPMorgan Chase & Co.",
-    role: "Software Engineer",
+    role: "Software Engineer (Code Jam)",
     daterange: "Nov 2022 - Dec 2022",
     summary: [
       "Steered the design and development of a responsive Web Application for a nonprofit",
@@ -114,7 +114,7 @@ export const experience: ExperiencePoint[] = [
 
   {
     company: "Rockwell Automation",
-    role: "Software Engineer Intern",
+    role: "Software Engineer (Intern)",
     daterange: "May 2019  -  Jun 2019",
     summary: [
       "Embedded software, UI design, and hardware for a fully Autonomous Greenhouse prototype",
@@ -136,6 +136,18 @@ export const experience: ExperiencePoint[] = [
 
 export const projects: ProjectPoint[] = [
   {
+    title: "Portfolio Website",
+    summary:
+      "Created a responsive, component-based architecture for maximum flexibility and code reusability ",
+    technologies: "TypeScript, React.js, TailwindCSS, Jest, RadixUI",
+    details: [
+      "Designed with accessibility at the forefront, following the latest WAI-ARIA standards",
+      "Implemented light and dark themes to accommodate modern user expectations",
+      'Devised loading "skeletons" and other animations for smooth, hassle-free navigation',
+    ],
+    link: "https://github.com/sebastian-nunez/portfolio-nextjs",
+  },
+  {
     title: "MLB Insights App",
     summary:
       "Developed an intuitive Web App that allows baseball fans to view the statistics of MLB players through an interface with a search engine",
@@ -150,13 +162,13 @@ export const projects: ProjectPoint[] = [
   {
     title: "T3 Web App",
     summary:
-      "Steered the design and development of a responsive Web Application for a nonprofit",
+      "Steered the design and development of a responsive Web Application for a nonprofit partner",
     technologies:
       "JavaScript, React.js, UI/UX, Figma, Bootstrap, Kanban, GitHub",
     details: [
-      "Created reusable components that increased development efficiency by 40%",
+      "Created modular, reusable UI components that increased development efficiency by over 40%",
+      "Delivered the infrastructure needed to populate web pages from a Backend service dynamically",
       "Designed a seamless and consistent user experience across mobile and desktop devices",
-      "Utilized an Agile strategy to streamline development resulting in a 20% boost in productivity",
     ],
     link: "",
   },
