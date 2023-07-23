@@ -1,6 +1,23 @@
+"use client"
+
+import { useEffect } from "react"
+
+import { ToastAction } from "@/components/ui/toast"
 import { Anchor, H1, P } from "@/components/ui/typography"
+import { useToast } from "@/components/ui/use-toast"
 
 const Resume: React.FC = () => {
+  const { toast } = useToast()
+
+  useEffect(() => {
+    console.log("toast")
+    toast({
+      title: "Awesome! Let's have a look, shall we?",
+      description: "Generating a PDF preview...",
+      action: <ToastAction altText="Dismiss">Dismiss</ToastAction>,
+    })
+  }, [])
+
   return (
     <div className="h-screen" style={{ maxWidth: "100%", overflowX: "hidden" }}>
       <iframe

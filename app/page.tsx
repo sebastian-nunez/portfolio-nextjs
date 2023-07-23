@@ -23,8 +23,6 @@ import ProjectSidepanel from "@/components/project-sidepanel"
 import { PROJECT_RESULTS_LIMIT } from "../config/profile"
 
 export default function IndexPage() {
-  const { toast } = useToast()
-
   return (
     <main className="container grid items-center gap-6 pb-8 pt-8 md:py-14">
       <div className="h-[calc(100vh_-_8rem)]">
@@ -57,13 +55,6 @@ export default function IndexPage() {
               "lg:px-16",
               "shadow"
             )}
-            onClick={() => {
-              toast({
-                title: "Awesome! Let's have a look, shall we?",
-                description: "Generating a PDF preview...",
-                action: <ToastAction altText="Dismiss">Dismiss</ToastAction>,
-              })
-            }}
           >
             Resume
           </Link>
@@ -115,18 +106,7 @@ export default function IndexPage() {
       {/* <ProjectSidepanel /> */}
 
       <div className="flex justify-center">
-        <Button
-          size="lg"
-          className="mt-10 w-1/2 drop-shadow-lg"
-          asChild
-          onClick={() => {
-            toast({
-              title: "Awesome! Let's have a look, shall we?",
-              description: "Generating a PDF preview...",
-              action: <ToastAction altText="Dismiss">Dismiss</ToastAction>,
-            })
-          }}
-        >
+        <Button size="lg" className="mt-10 w-1/2 drop-shadow-lg" asChild>
           <Link href="/resume">View Resume</Link>
         </Button>
       </div>
