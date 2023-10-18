@@ -1,12 +1,12 @@
 import { ExperiencePoint, ProjectPoint } from "@/types/experience"
 
-export const EXPERIENCE_RESULTS_LIMIT = 3 // default number of experience jobs to be the rendered
+export const EXPERIENCE_RESULTS_LIMIT = 6 // default number of experience jobs to be the rendered
 export const EXPERIENCE_SKILLS_SEPARATOR = "•" // separator between skills
 export const PROJECT_RESULTS_LIMIT = 4 // default number of experience jobs to be the rendered
 
 export const profile = {
   name: "Sebastian Nunez",
-  currentRole: "Software Engineering Intern",
+  currentRole: "Software Engineer (Intern)",
   currentCompany: "JPMorgan Chase & Co.",
 }
 
@@ -39,7 +39,7 @@ export const experience: ExperiencePoint[] = [
   },
   {
     company: "Google",
-    role: "Tech Exchange Scholar",
+    role: "Tech Exchange Program (Co-op)",
     daterange: "Jan 2023 - Jun 2023",
     summary: [
       "Completed accredited coursework and mentorship directly from Google engineers",
@@ -78,7 +78,7 @@ export const experience: ExperiencePoint[] = [
   },
   {
     company: "AI4ALL",
-    role: "Discover AI Fellow",
+    role: "Machine Learning Fellow",
     daterange: "Jan 2023 - Apr 2023",
     summary: [
       "Developed a Machine Learning model to infer song genres through parameter analysis",
@@ -117,7 +117,7 @@ export const experience: ExperiencePoint[] = [
 
   {
     company: "Rockwell Automation",
-    role: "Software Engineer (Intern)",
+    role: "Software Engineer (Shadow)",
     daterange: "May 2019  -  Jun 2019",
     summary: [
       "Embedded software, UI design, and hardware for a fully Autonomous Greenhouse prototype",
@@ -125,13 +125,13 @@ export const experience: ExperiencePoint[] = [
       "Designed a seamless and consistent user experience across mobile and desktop devices",
     ],
     skills: [
-      "JavaScript",
-      "React.js",
-      "TailwindCSS",
-      "Bootstrap",
-      "Figma",
-      "Kanban",
-      "GitHub",
+      "Python",
+      "GUI Automation",
+      "UI/UX",
+      "Object-Oriented Programming",
+      "Bash",
+      "Unix",
+      "Figma"
     ],
     details: [],
   },
