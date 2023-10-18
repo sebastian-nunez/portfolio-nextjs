@@ -75,15 +75,23 @@ export default function IndexPage() {
                     skillSeparator={EXPERIENCE_SKILLS_SEPARATOR}
                   />
                 ))
-            : null}{" "}
+            : ( 
+             <div>
+              <H1 className="mt-5">I'm sorry :/ </H1>
+
+              <P>
+                It seems like there is no experience to show off at the moment...
+              </P>
+            </div>
+          )}
           {/* TODO: implement a simple loading spinner */}
         </div>
       </section>
 
       <section className="mt-6">
-        <H2 className="mb-5 md:text-3xl lg:text-5xl">Projects</H2>
+        <H2 className="mb-5 md:text-3xl lg:text-5xl">Recent Projects</H2>
 
-        <div className="grid grid-cols-1 gap-7 md:grid-cols-2  lg:gap-4">
+        <div className="grid grid-cols-1 gap-7 md:grid-cols-2 lg:gap-4">
           {projects ? (
             projects
               .slice(0, PROJECT_RESULTS_LIMIT)
@@ -95,7 +103,7 @@ export default function IndexPage() {
               <H1 className="mt-5">I'm sorry :/ </H1>
 
               <P>
-                It seems like there are more projects to show off at the moment
+                It seems like there are no projects to show off at the moment...
               </P>
             </div>
           )}
