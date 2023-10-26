@@ -59,9 +59,10 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
           {skills &&
             skills.slice(0, skills.length - 1).map(
               (
-                skill // don't include the separator on the 2nd to last item
+                skill,
+                idx // don't include the separator on the 2nd to last item
               ) => (
-                <em>
+                <em key={idx}>
                   {skill} {skillSeparator}{" "}
                 </em>
               )
