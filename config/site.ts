@@ -31,5 +31,6 @@ export const siteConfig = {
   links: {
     github: "https://github.com/sebastian-nunez",
     linkedin: "https://www.linkedin.com/in/sebastian-nunez-profile/",
+    stockpulse: "https://stockpulse.up.railway.app/",
   },
 }
