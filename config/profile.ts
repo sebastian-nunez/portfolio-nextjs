@@ -6,8 +6,8 @@ export const PROJECT_RESULTS_LIMIT = 4 // default number of experience jobs to b
 
 export const profile = {
   name: "Sebastian Nunez",
-  currentRole: "Software Engineer (Intern)",
-  currentCompany: "JPMorgan Chase & Co.",
+  currentRole: "Incoming Software Engineer (Intern)",
+  currentCompany: "UKG",
 }
 
 // NOTE: results will be order top to bottom: keep top 3 results near the top of the list.
@@ -131,7 +131,7 @@ export const experience: ExperiencePoint[] = [
       "Object-Oriented Programming",
       "Bash",
       "Unix",
-      "Figma"
+      "Figma",
     ],
     details: [],
   },
