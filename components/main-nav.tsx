@@ -23,7 +23,7 @@ export function MainNav({ items, children }: MainNavProps) {
   const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false)
 
   return (
-    <div className="flex gap-6 md:gap-10">
+    <div className="flex gap-6">
       <Link href="/" className="flex items-center space-x-2">
         <Icons.logo className="mb-2 hidden h-6 w-6 fill-inherit md:inline" />
         <span className="hidden font-bold lg:inline">{siteConfig.name}</span>
