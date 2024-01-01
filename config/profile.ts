@@ -139,6 +139,18 @@ export const experience: ExperiencePoint[] = [
 
 export const projects: ProjectPoint[] = [
   {
+    title: "StockPulse",
+    summary:
+      "An efficient and intuitive inventory management application designed for e-commerce businesses",
+    technologies: "JavaScript, React.js, Node.js, Express, PostgresSQL",
+    details: [
+      "Complete CRUD functionality: browse, filter, search for products, tags and categories",
+      "Users are able to securely login via OAuth 2.0 and GitHub",
+      "End-to-end data validation, error handling, and loading states. Website is fully responsive on mobile and desktop",
+    ],
+    link: "https://github.com/sebastian-nunez/stock-pulse",
+  },
+  {
     title: "Portfolio Website",
     summary:
       "Created a responsive, component-based architecture for maximum flexibility and code reusability ",
