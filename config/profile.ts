@@ -6,21 +6,43 @@ export const PROJECT_RESULTS_LIMIT = 4 // default number of experience jobs to b
 
 export const profile = {
   name: "Sebastian Nunez",
-  currentRole: "Incoming Software Engineer (Intern)",
+  currentRole: "Software Engineer (Intern)",
   currentCompany: "UKG",
 }
 
 // NOTE: results will be order top to bottom: keep top 3 results near the top of the list.
 export const experience: ExperiencePoint[] = [
   {
+    company: "UKG",
+    role: "Software Engineer (Intern)",
+    daterange: "Jan 2024 - Present",
+    summary: [
+      "Part of the Quality Automation Value Stream",
+      "Providing the tooling and infrastructure to support the product teams' testing capabilities using microservices, reports, and dashboards",
+      "Migrating various internal web applications from Angular to Spotify's Backstage platform",
+      "Creating a unified developer hub to increase productivity and ease the onboarding process",
+    ],
+    skills: [
+      "TypeScript",
+      "Node.js",
+      "React.js",
+      "NestJS",
+      "Material UI",
+      "Jest",
+      "GCP",
+      "MongoDB",
+    ],
+    details: [],
+  },
+  {
     company: "JPMorgan Chase & Co.",
     role: "Software Engineer (Intern)",
     daterange: "Jun 2023 - Aug 2023",
     summary: [
-      "Developing a microservice to parse, store, and filter thousands of events from data streams",
-      "Deploying a frontend interface to allow simplified access to the pipeline events",
-      "Configuring cost-efficient, auto-scaling to handle up to 50,000 events per day",
-      "Implementing robust Unit and Integration Tests with an outstanding 98% code coverage",
+      "Developed a microservice to parse, store, and filter thousands of events from data streams",
+      "Deployed a frontend interface to allow simplified access to the pipeline events",
+      "Configured cost-efficient, auto-scaling to handle up to 50,000 events per day",
+      "Implemented robust Unit and Integration Tests with an outstanding 98% code coverage",
     ],
     skills: [
       "Java",
@@ -28,7 +50,7 @@ export const experience: ExperiencePoint[] = [
       "SpringBoot",
       "Kafka",
       "AWS",
-      "Jira",
+      "JIRA",
       "Microservices",
       "Kanban",
       "CI/CD",
@@ -62,7 +84,6 @@ export const experience: ExperiencePoint[] = [
       "Led the development of a fullstack Web Application to help students for technical roles",
       "Successfully embedded an efficient text editor, improving player retention by over 50%",
       "Engineered the integration of a secure backend server to handle thousands of requests",
-      "Implemented indexing, query optimizations, and proxy caching decreasing server latency by 30%",
     ],
     skills: [
       "TypeScript",
@@ -74,7 +95,9 @@ export const experience: ExperiencePoint[] = [
       "Docker",
       "Scrum",
     ],
-    details: [],
+    details: [
+      "Implemented indexing, query optimizations, and proxy caching decreasing server latency by 30%",
+    ],
   },
   {
     company: "AI4ALL",
