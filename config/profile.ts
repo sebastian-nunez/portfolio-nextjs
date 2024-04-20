@@ -1,5 +1,7 @@
 import { ExperiencePoint, ProjectPoint } from "@/types/experience"
 
+import { siteConfig } from "./site"
+
 export const EXPERIENCE_RESULTS_LIMIT = 6 // default number of experience jobs to be the rendered
 export const EXPERIENCE_SKILLS_SEPARATOR = "•" // separator between skills
 export const PROJECT_RESULTS_LIMIT = 4 // default number of experience jobs to be the rendered
@@ -16,9 +18,7 @@ export const experience: ExperiencePoint[] = [
     company: "Google",
     role: "Software Engineer (Intern)",
     daterange: "May 2024 - Present",
-    summary: [
-      "Developer Services Infrastructure (Google Core)"
-    ],
+    summary: ["Developer Services Infrastructure (Google Core)"],
     skills: [
       // "Java",
       // "TypeScript",
@@ -93,7 +93,7 @@ export const experience: ExperiencePoint[] = [
       "Careers in Tech",
     ],
     details: [
-      "Collaborated with a diverse and talented network of peers across the United States"
+      "Collaborated with a diverse and talented network of peers across the United States",
     ],
   },
   {
@@ -192,6 +192,18 @@ export const projects: ProjectPoint[] = [
       "End-to-end data validation, error handling, and loading states. Website is fully responsive on mobile and desktop",
     ],
     link: "https://github.com/sebastian-nunez/stock-pulse",
+  },
+  {
+    title: "YouPlay",
+    summary:
+      "A streamlined music streaming service to track playlists and songs based on the user's current mood",
+    technologies: "Swift, SwiftUI, Firebase, Spotify SDK",
+    details: [
+      "Users are able to manage playlists, search for songs, and view their recent searches with the ability to play songs on-demand",
+      "Complete authentication flow and profile picture file upload to Firebase Storage",
+      "Sleek UI design completed with custom loading and empty content states to create a seamless experience",
+    ],
+    link: siteConfig.links.youplay,
   },
   {
     title: "Portfolio Website",
