@@ -7,20 +7,39 @@ export const PROJECT_RESULTS_LIMIT = 4 // default number of experience jobs to b
 export const profile = {
   name: "Sebastian Nunez",
   currentRole: "Software Engineer (Intern)",
-  currentCompany: "UKG",
+  currentCompany: "Google",
 }
 
 // NOTE: results will be order top to bottom: keep top 3 results near the top of the list.
 export const experience: ExperiencePoint[] = [
   {
+    company: "Google",
+    role: "Software Engineer (Intern)",
+    daterange: "May 2024 - Present",
+    summary: [
+      "Developer Services Infrastructure (Google Core)"
+    ],
+    skills: [
+      // "Java",
+      // "TypeScript",
+      // "C++",
+      // "Angular",
+      // "Material UI",
+      // "gRPC",
+      // "Microservices",
+      // "CI/CD"
+    ],
+    details: [],
+  },
+  {
     company: "UKG",
     role: "Software Engineer (Intern)",
-    daterange: "Jan 2024 - Present",
+    daterange: "Jan 2024 - Apr 2024",
     summary: [
       "Part of the Quality Automation Value Stream",
       "Providing the tooling and infrastructure to support the product teams' testing capabilities using microservices, reports, and dashboards",
-      "Migrating various internal web applications from Angular to Spotify's Backstage platform",
-      "Creating a unified developer hub to increase productivity and ease the onboarding process",
+      "Migrated various internal web applications to Spotify's Backstage platform",
+      "Automated build pipelines using GitHub Actions to off-board from legacy Team City builds",
     ],
     skills: [
       "TypeScript",
@@ -67,14 +86,15 @@ export const experience: ExperiencePoint[] = [
       "Completed accredited coursework and mentorship directly from Google engineers",
       "Developed expertise in the efficient usage of Data Structures & Algorithms",
       "Gained unique insights into Google's engineering practices and culture",
-      "Collaborated with a diverse and talented network of peers across the United States",
     ],
     skills: [
       "Applied Data Structures & Algorithms",
       "Product Management",
       "Careers in Tech",
     ],
-    details: [],
+    details: [
+      "Collaborated with a diverse and talented network of peers across the United States"
+    ],
   },
   {
     company: "INIT",
