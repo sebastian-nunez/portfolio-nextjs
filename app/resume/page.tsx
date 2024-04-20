@@ -9,7 +9,7 @@ import { useToast } from "@/components/ui/use-toast"
 const Resume: React.FC = () => {
   const { toast } = useToast()
   // Document ID of the Google Drive file
-  const docId = "1hMw9q7l9Wbd2s3iO5CQcBcRqWSFI11UzgwWoaaXFabc"
+  const docId = "1CRTWwB-ksKgEoLYOHgQ1rZK0mF59ND-B3SyU3cla2Mc"
 
   useEffect(() => {
     toast({
