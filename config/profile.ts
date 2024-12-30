@@ -8,7 +8,7 @@ export const PROJECT_RESULTS_LIMIT = 4 // default number of experience jobs to b
 
 export const profile = {
   name: "Sebastian Nunez",
-  currentRole: "Software Engineer (Intern)",
+  currentRole: "Software Engineer",
   currentCompany: "Google",
 }
 
@@ -16,18 +16,29 @@ export const profile = {
 export const experience: ExperiencePoint[] = [
   {
     company: "Google",
+    role: "Software Engineer",
+    daterange: "Feb 2024 - Present",
+    summary: ["Fullstack development"],
+    skills: [],
+    details: [],
+  },
+  {
+    company: "Google",
     role: "Software Engineer (Intern)",
-    daterange: "May 2024 - Present",
-    summary: ["Developer Services Infrastructure (Google Core)"],
+    daterange: "May 2024 - Aug 2024",
+    summary: [
+      "Launced a web application that allows engineers to intuitively gain insights into their nonlinear and pipelined releases within a single, unifed UI experience across CI/CD at Google",
+      "Developed features to visualize release phase dependency trees, view live version data within phases, access release blockers, change list inclusion filters, estimate schedule of promotion, and more.",
+    ],
     skills: [
-      // "Java",
-      // "TypeScript",
-      // "C++",
-      // "Angular",
-      // "Material UI",
-      // "gRPC",
-      // "Microservices",
-      // "CI/CD"
+      "Java",
+      "TypeScript",
+      "Golang",
+      "Angular",
+      "Material UI",
+      "gRPC",
+      "Microservices",
+      "CI/CD",
     ],
     details: [],
   },
@@ -61,7 +72,7 @@ export const experience: ExperiencePoint[] = [
       "Developed a microservice to parse, store, and filter thousands of events from data streams",
       "Deployed a frontend interface to allow simplified access to the pipeline events",
       "Configured cost-efficient, auto-scaling to handle up to 50,000 events per day",
-      "Implemented robust Unit and Integration Tests with an outstanding 98% code coverage",
+      // "Implemented robust Unit and Integration Tests with an outstanding 98% code coverage",
     ],
     skills: [
       "Java",
@@ -181,6 +192,18 @@ export const experience: ExperiencePoint[] = [
 ]
 
 export const projects: ProjectPoint[] = [
+  {
+    title: "Sockify",
+    summary:
+      "A two-sided, e-commerce platform designed for small business owners to sell custom socks",
+    technologies: "Golang, TypeScript, React.js, PostgresSQL, Stripe",
+    details: [
+      "Fullstack platform with customer and admin facing UIs. APIs are completely documented using Swagger",
+      "Customers are able to browse, add to cart, and securely checkout using Stripe",
+      "Admins can fully manage all inventory and orders. Website is fully responsive on mobile and desktop",
+    ],
+    link: "https://github.com/sockify/sockify",
+  },
   {
     title: "StockPulse",
     summary:
