@@ -33,5 +33,6 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/in/sebastian-nunez-profile/",
     stockpulse: "https://stockpulse.up.railway.app/",
     youplay: "https://github.com/you-play/YouPlay",
+    sockify: "https://sockify.up.railway.app/",
   },
 }
