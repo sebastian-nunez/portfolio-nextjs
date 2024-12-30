@@ -29,10 +29,10 @@ export default function IndexPage() {
         {" "}
         {/* Push everything below the hero down */}
         <section className="flex max-w-[980px] flex-col items-start gap-2">
-          <div className="text-6xl font-[300] leading-tight sm:text-8xl md:text-9xl lg:text-[11rem]">
+          <h1 className="text-6xl font-[300] leading-tight sm:text-8xl md:text-9xl lg:text-[11rem]">
             Hey, I'm
             <br /> <span className="font-extrabold">Sebastian!</span>
-          </div>
+          </h1>
 
           <p className="sm:text-md max-w-fit text-base italic leading-tight text-muted-foreground sm:max-w-[700px] md:text-xl lg:text-2xl">
             {profile.currentRole} at {profile.currentCompany}
@@ -75,7 +75,7 @@ export default function IndexPage() {
                     skillSeparator={EXPERIENCE_SKILLS_SEPARATOR}
                   />
                 ))
-            : ( 
+            : (
              <div>
               <H1 className="mt-5">I'm sorry :/ </H1>
 

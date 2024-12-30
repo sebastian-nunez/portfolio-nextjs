@@ -5,7 +5,7 @@ import Link from "next/link"
 import { PROJECT_RESULTS_LIMIT, projects } from "@/config/profile"
 
 import { Button } from "@/components/ui/button"
-import { H1, P } from "@/components/ui/typography"
+import { H1, H2, P } from "@/components/ui/typography"
 import ProjectCard from "@/components/project-card"
 
 const Projects: React.FC = () => {
@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
           ))
         ) : (
           <div>
-            <H1 className="mt-5">I'm sorry :/ </H1>
+            <H2 className="mt-5">I'm sorry :/ </H2>
 
             <P className="text-2xl">
               It seems like there are more projects to show off at the moment
